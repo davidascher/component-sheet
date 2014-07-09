@@ -6,38 +6,19 @@
       "thumbnail": "./thumbnail.png",
       "description": "A canvas for drawing and sharing",
       "broadcasts": {
-        "imageGenerated": {
-          "label": "Image Generated",
-          "description": "A portable image URL was generated",
+        "cellclicked": {
+          "label": "Cell Tapped",
+          "description": "A cell was tapped",
           "default": "green"
         }
       },
       "listeners": {
-        "generateImage": {
-          "label": "Generate Image",
-          "description": "Generates a portable image URL from the drawing"
-        },
-        "reset": {
-          "label": "Reset",
-          "description": "Description for reset"
-        }
       },
       "attributes": {
         "url": {
           "label": "Google Docs URL",
           "description": "URL",
           "editable": "text"
-        },
-        "pensize": {
-          "label": "Pen Size",
-          "description": "Width of pen used for drawing",
-          "editable": "number",
-          "min": 1
-        },
-        "height": {
-          "label": "Height",
-          "description": "Height of canvas",
-          "editable": "number"
         }
       }
     }
@@ -48,17 +29,12 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/components/components.css">
     <link rel="stylesheet" href="component.css">
-    <div class="container">
-      <p id="title" class="large">Title</p>
-    </div>
-    <div class="wrapper">
-      <table id="table">
-        <thead id="thead">
-        </thead>
-        <tbody id="tbody">
-        </tbody>
-      </table>
-    </div>
+    <table id="table">
+      <thead id="thead">
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
     <shadow></shadow>
   </template>
     <script>
@@ -84,27 +60,31 @@ require(['jquery'], function($) {
             var items = [];
             var cells = [];
             var title = payload.title;
-            $("#title").text(title);
             var data = payload.data;
-            console.log(data);
             $.each( data[0], function( key, val ) {
-          //    console.log(key, val);
               cells.push("<th>" + val + "</th>");
             });
-            console.log(cells.join(""));
             $("<tr/>", {id:"header", html: cells.join("")}).appendTo($(that.$.thead));
             $.each( data.slice(1), function( key, val ) {
               cells = [];
               $.each(val, function(key, cell) {
-          //      console.log(key);
                 if (data[0][key] == 'Email') {
-                  cell = "<a href='mailto:" + cell + "'>"+cell+"</a>";
+                  cell = "<a Xhref='mailto:" + cell + "'>"+cell+"</a>";
                 } else if (data[0][key] == 'Phone') {
-                  cell = "<a href='tel:" + cell + "'>"+cell+"</a>";
+                  cell = "<a Xhref='tel:" + cell + "'>"+cell+"</a>";
                 }
-                cells.push("<td data-th='"+data[0][key]+"'>" + cell + "</td>");
+                cells.push("<td class='large' data-th='"+data[0][key]+"'>" + cell + "</td>");
               });
-              $("<tr/>", {html: cells.join("")}).appendTo($(that.$.tbody));
+              var bits = $("<tr/>", {html: cells.join("")});
+              bits.appendTo($(that.$.tbody));
+            });
+            console.log("body", $(that.$.tbody));
+            var links = that.$.tbody.querySelectorAll('a');
+            console.log("LINKS", links);
+            Array.prototype.forEach.call(links, function(link) {
+              link.on('click', function(evt) {
+                console.log(evt);
+              });
             });
           });
           this.super();

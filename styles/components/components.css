@@ -439,14 +439,14 @@ pre {
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .main-container {
     padding-left: 4.8%;
     padding-right: 4.8%;
     max-width: 688px;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1800px) {
   .main-container {
     padding-left: 4.4%;
     padding-right: 4.4%;
@@ -462,7 +462,7 @@ pre {
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .container {
     padding-left: 4.8%;
     padding-right: 4.8%;
@@ -477,7 +477,7 @@ pre {
   }
 }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .container-medium {
     box-sizing: content-box;
     position: relative;
@@ -487,14 +487,14 @@ pre {
     margin-right: auto;
   }
 }
-@media only screen and (min-width: 620px) and (min-width: 620px) {
+@media only screen and (min-width: 1620px) and (min-width: 1620px) {
   .container-medium {
     padding-left: 4.8%;
     padding-right: 4.8%;
     max-width: 688px;
   }
 }
-@media only screen and (min-width: 620px) and (min-width: 800px) {
+@media only screen and (min-width: 1620px) and (min-width: 800px) {
   .container-medium {
     padding-left: 4.4%;
     padding-right: 4.4%;
@@ -512,7 +512,7 @@ pre {
     margin-right: auto;
   }
 }
-@media only screen and (max-width: 619px) and (min-width: 620px) {
+@media only screen and (max-width: 619px) and (min-width: 1620px) {
   .container-small {
     padding-left: 4.8%;
     padding-right: 4.8%;
@@ -692,7 +692,7 @@ pre {
   z-index: 1;
   position: relative;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .highlight-module__container {
     padding-left: 4.8%;
     padding-right: 4.8%;
@@ -709,7 +709,7 @@ pre {
 .highlight-module__container::before {
   display: none;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .highlight-module__container::before {
     display: block;
     position: absolute;
@@ -738,7 +738,7 @@ pre {
     font-size: 430px;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .highlight-module__container {
     padding-bottom: 52px;
   }
@@ -1217,7 +1217,7 @@ div.highlight > pre > code .il, code .highlight .il {
 .editorial-header .breadcrumbs a {
   color: #3372df;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .editorial-header .container {
     position: relative;
   }
@@ -1271,7 +1271,7 @@ div.highlight > pre > code .il, code .highlight .il {
     padding-bottom: 0;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .editorial-header__subtitle {
     padding-top: 0;
     padding-bottom: 26px;
@@ -1284,7 +1284,7 @@ div.highlight > pre > code .il, code .highlight .il {
 .editorial-header__toc ol {
   padding-top: 0;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .editorial-header__toc ol {
     padding-top: 0;
   }
@@ -1362,7 +1362,7 @@ div.highlight > pre > code .il, code .highlight .il {
     padding-bottom: 0;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .related-guides__title {
     padding-top: 0;
   }
@@ -1417,7 +1417,7 @@ div.highlight > pre > code .il, code .highlight .il {
 .article-section__icon {
   top: -26px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .article-section__icon {
     top: -39px;
   }
@@ -1511,7 +1511,7 @@ div.highlight > pre > code .il, code .highlight .il {
   top: 0;
   margin: 0;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .featured-spotlight__img img {
     width: auto;
     max-width: none;
@@ -1550,7 +1550,7 @@ div.highlight > pre > code .il, code .highlight .il {
     padding-bottom: 0;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .quote__content {
     padding-top: 52px;
     padding-left: 0;
@@ -1574,7 +1574,7 @@ div.highlight > pre > code .il, code .highlight .il {
   left: 26px;
   font-size: 260px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .quote__content::before {
     top: 225px;
     left: -210px;
@@ -1613,7 +1613,7 @@ div.highlight > pre > code .il, code .highlight .il {
   font-size: 20px;
   font-weight: 400;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .article-nav-link::before {
     top: 25px;
     font-size: 26px;
@@ -1636,7 +1636,7 @@ div.highlight > pre > code .il, code .highlight .il {
   font-family: "icons";
   left: 32px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .article-nav-link--prev p {
     padding-left: 52px;
   }
@@ -1646,7 +1646,7 @@ div.highlight > pre > code .il, code .highlight .il {
   font-family: "icons";
   right: 32px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .article-nav-link--next p {
     padding-right: 52px;
   }
@@ -1672,7 +1672,7 @@ div.highlight > pre > code .il, code .highlight .il {
     padding-bottom: 0;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .article-nav-count {
     font-weight: 400;
   }
@@ -1683,7 +1683,7 @@ div.highlight > pre > code .il, code .highlight .il {
 * Text module
 *
 **/
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .did-you-know ol {
     padding-top: 0 !important;
   }
@@ -1696,7 +1696,7 @@ div.highlight > pre > code .il, code .highlight .il {
   position: relative;
   padding-left: 0;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .did-you-know > .g--half {
     padding-left: 32px;
   }
@@ -1705,7 +1705,7 @@ div.highlight > pre > code .il, code .highlight .il {
 .did-you-know__symbol {
   padding-bottom: 312px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .did-you-know__symbol {
     padding-bottom: 26px;
   }
@@ -1721,7 +1721,7 @@ div.highlight > pre > code .il, code .highlight .il {
   display: block;
   width: 0;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .did-you-know__symbol::after {
     position: absolute;
     font-size: 400px;
@@ -1764,7 +1764,7 @@ div.highlight > pre > code .il, code .highlight .il {
     padding-bottom: 0;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .toc__title {
     padding-bottom: 13px;
     margin-bottom: 13px;
@@ -1797,7 +1797,7 @@ div.highlight > pre > code .il, code .highlight .il {
   color: #ffffff;
   position: relative;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .next-lessons h3 i {
     display: none;
   }
@@ -1807,12 +1807,12 @@ div.highlight > pre > code .il, code .highlight .il {
   position: absolute;
   display: none;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .next-lessons::before, .next-lessons::after {
     display: inline-block;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .next-lessons::before {
     content: attr(data-current-lesson);
     font-family: "Roboto Condensed", Helvetica, sans-serif;
@@ -1837,7 +1837,7 @@ div.highlight > pre > code .il, code .highlight .il {
     right: 230px;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .next-lessons::after {
     content: "\e00e";
     font-family: "icons";
@@ -1858,7 +1858,7 @@ div.highlight > pre > code .il, code .highlight .il {
 * Grid
 *
 **/
-@media only screen and (min-width: 620px) and (max-width: 799px) {
+@media only screen and (min-width: 1620px) and (max-width: 799px) {
   .g-medium--1 {
     float: left;
     margin-right: 4.5%;
@@ -2033,7 +2033,7 @@ div.highlight > pre > code .il, code .highlight .il {
   height: 100%;
   display: block;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .debug .grid-overlay {
     padding-left: 4.8%;
     padding-right: 4.8%;
@@ -2051,7 +2051,7 @@ div.highlight > pre > code .il, code .highlight .il {
   height: 100%;
   background-color: rgba(89, 89, 89, 0.2);
 }
-@media only screen and (min-width: 620px) and (max-width: 799px) {
+@media only screen and (min-width: 1620px) and (max-width: 799px) {
   .debug .grid-overlay .g-wide--last {
     display: none;
   }
@@ -2099,7 +2099,7 @@ h4 {
   padding-top: 1.6250em;
   padding-bottom: 0;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1800px) {
   .medium,
   h4 {
     font-size: 20px;
@@ -2120,7 +2120,7 @@ h3 {
   padding-top: 1.3000em;
   padding-bottom: 0;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1800px) {
   .large,
   h3 {
     font-family: "Roboto Condensed", Helvetica, sans-serif;
@@ -2143,7 +2143,7 @@ h2 {
   padding-top: 1.0000em;
   padding-bottom: 0;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1800px) {
   .xlarge,
   h2 {
     font-family: "Roboto Condensed", Helvetica, sans-serif;
@@ -2166,7 +2166,7 @@ h1 {
   padding-top: 0.6190em;
   padding-bottom: 0;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1800px) {
   .xxlarge,
   h1 {
     font-family: "Roboto Condensed", Helvetica, sans-serif;
@@ -2188,7 +2188,7 @@ h1 {
   padding-top: 0.3824em;
   padding-bottom: 0;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 2800px) {
   .huge {
     font-family: "Roboto Condensed", Helvetica, sans-serif;
     font-size: 110px;
@@ -2417,7 +2417,7 @@ ol.list-links.list-links--secondary a::before {
 }
 
 /*==========  SMALL LIST  ==========*/
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .list-small li {
     font-size: 13px;
     line-height: 2.0000em;
@@ -2447,7 +2447,7 @@ ol.list-links.list-links--secondary a::before {
   padding-bottom: 26px;
   margin-top: 26px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .featured-list__item {
     min-height: 338px;
     padding: 52px 32px;
@@ -2466,7 +2466,7 @@ ol.list-links.list-links--secondary a::before {
   padding-top: 26px;
   margin: 0 -5%;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .featured-list__img-wrapper {
     display: block;
     padding-top: 0;
@@ -2474,7 +2474,7 @@ ol.list-links.list-links--secondary a::before {
   }
 }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .featured-list__img {
     padding-top: 60.8%;
     padding-bottom: 0;
@@ -2489,7 +2489,7 @@ ol.list-links.list-links--secondary a::before {
   margin: 0 auto;
   max-width: 100%;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .featured-list__img img {
     margin: 0;
     position: absolute;
@@ -2506,7 +2506,7 @@ ol.list-links.list-links--secondary a::before {
   padding-top: 0;
   padding-left: 0;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .related-guides-list {
     padding-top: 26px;
   }
@@ -2530,7 +2530,7 @@ ol.list-links.list-links--secondary a::before {
 .related-guides-list li:last-child {
   border-color: transparent;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .related-guides-list li {
     padding-top: 0;
     padding-bottom: 0;
@@ -2586,7 +2586,7 @@ ol.list-links.list-links--secondary a::before {
   padding-bottom: 51px;
   margin-bottom: 52px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .list-guides-intro li {
     border-color: transparent;
     padding-bottom: 0;
@@ -2674,7 +2674,7 @@ table th {
     padding-bottom: 0;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   table tr {
     border-bottom: 1px solid #ffffff;
   }
@@ -2705,7 +2705,7 @@ table td::before {
   padding-left: 13px;
   padding-top: 13px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   table td::before {
     display: none;
   }
@@ -2715,20 +2715,20 @@ table td {
   position: relative;
   padding-left: 140px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   table th,
   table td {
     display: table-cell;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   table th {
     padding: 26px;
     padding-top: 13px;
     padding-bottom: 12px;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   table td {
     padding: 26px;
     padding-bottom: 25px;
@@ -2745,7 +2745,7 @@ td:last-child::after {
   bottom: 0;
   width: 100%;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   td:last-child::after {
     display: none;
   }
@@ -2759,7 +2759,7 @@ td:last-child::after {
     width: 432px;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .table-2 th:first-child,
   .table-2 td:first-child {
     border-right: 2px solid #ffffff;
@@ -2774,7 +2774,7 @@ td:last-child::after {
     width: 288px;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .table-3 th:nth-child(2),
   .table-3 td:nth-child(2) {
     border-left: 2px solid #ffffff;
@@ -2790,7 +2790,7 @@ td:last-child::after {
     width: 216px;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .table-4 th:nth-child(2), .table-4 th:nth-child(3),
   .table-4 td:nth-child(2),
   .table-4 td:nth-child(3) {
@@ -2825,7 +2825,7 @@ object {
   position: relative;
   z-index: 1;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .breadcrumbs {
     display: block;
   }
@@ -2850,7 +2850,7 @@ object {
   font-weight: 400;
   padding-top: 0;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .breadcrumbs__link {
     padding-top: 0;
   }
@@ -2911,7 +2911,7 @@ object {
 .articles-list__item:first-child {
   padding-top: 0;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .articles-list__item:first-child {
     padding-top: 24px;
   }
@@ -2928,7 +2928,7 @@ object {
 .guides-list {
   overflow: hidden;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .guides-list {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2949,7 +2949,7 @@ object {
   margin-top: 26px;
   margin-bottom: 0;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .guides-list__item {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2968,7 +2968,7 @@ object {
 .guides-list__item p {
   margin: 26px 32px 0;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .guides-list__item .primary-content {
     -webkit-flex: 1;
         -ms-flex: 1;
@@ -2980,7 +2980,7 @@ object {
   margin-top: 51px;
   border-top: 1px solid #e0e0e0;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .guides-list__item .secondary-content {
     width: 100%;
   }
@@ -3040,7 +3040,7 @@ object {
   font-size: 26px;
   font-weight: 700;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .icon-circle span,
   .icon-circle--large span {
     font-size: 42px;
@@ -3056,12 +3056,12 @@ object {
 .icon-circle--large i {
   font-size: 26px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .icon-circle--large i {
     font-size: 42px;
   }
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .icon-circle--large {
     padding: 37px;
     border: 2px solid #ffffff;
@@ -3093,7 +3093,7 @@ object {
   padding: 13px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .icon-circle--nav {
     padding: 22px;
     margin-top: 4px;
@@ -3110,7 +3110,7 @@ object {
   color: #ffffff;
   font-size: 16px;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1620px) {
   .icon-circle--nav i {
     font-size: 26px;
   }

@@ -5,17 +5,26 @@
   background-color: #fff;
 }
 
-:host .wrapper {
+:host table {
   width: 320;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  display: block;
+  max-width: 100% !important;
+  max-height: 400px;
   cursor: pointer;
+  overflow: scroll;
 }
 
-:host .wrapper table {
-  overflow:auto;
+:host table td.large {
+  word-wrap: normal;
+  word-break: normal;
+  padding-left: 120px;
+  padding-top: .6em;
 }
+:host table td a {
+  word-wrap: normal;
+  word-break: break-all;
+}
+
 :host #cursor {
   background: #000;
   position: absolute;
