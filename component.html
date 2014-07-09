@@ -1,0 +1,115 @@
+<polymer-element name="ceci-component-sheet" extends="ceci-element" attributes="height url">
+  <ceci-definition>
+    {
+      "name": "Sheet",
+      "tags": "ceci-component-sheet",
+      "thumbnail": "./thumbnail.png",
+      "description": "A canvas for drawing and sharing",
+      "broadcasts": {
+        "imageGenerated": {
+          "label": "Image Generated",
+          "description": "A portable image URL was generated",
+          "default": "green"
+        }
+      },
+      "listeners": {
+        "generateImage": {
+          "label": "Generate Image",
+          "description": "Generates a portable image URL from the drawing"
+        },
+        "reset": {
+          "label": "Reset",
+          "description": "Description for reset"
+        }
+      },
+      "attributes": {
+        "url": {
+          "label": "Google Docs URL",
+          "description": "URL",
+          "editable": "text"
+        },
+        "pensize": {
+          "label": "Pen Size",
+          "description": "Width of pen used for drawing",
+          "editable": "number",
+          "min": 1
+        },
+        "height": {
+          "label": "Height",
+          "description": "Height of canvas",
+          "editable": "number"
+        }
+      }
+    }
+  </ceci-definition>
+  <template>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/h5bp.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components/components.css">
+    <link rel="stylesheet" href="component.css">
+    <div class="container">
+      <p id="title" class="large">Title</p>
+    </div>
+    <div class="wrapper">
+      <table id="table">
+        <thead id="thead">
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+    </div>
+    <shadow></shadow>
+  </template>
+    <script>
+require(['jquery'], function($) {
+      Polymer("ceci-component-sheet", {
+        readonly: 'false',
+        pensize: 5,
+        height: 100,
+        generateonchange: 'false',
+        heightChanged: function () {
+          this.style.height = this.height + 'px';
+          this.async(function () {
+            var rect = this.getBoundingClientRect();
+            this.$.canvas.width = rect.width;
+            this.$.canvas.height = rect.height;
+          });
+        },
+        ready: function() {
+          this.super();
+
+          var that = this;
+          $.getJSON("http://localhost:4000/data", function(payload) {
+            var items = [];
+            var cells = [];
+            var title = payload.title;
+            $("#title").text(title);
+            var data = payload.data;
+            console.log(data);
+            $.each( data[0], function( key, val ) {
+          //    console.log(key, val);
+              cells.push("<th>" + val + "</th>");
+            });
+            console.log(cells.join(""));
+            $("<tr/>", {id:"header", html: cells.join("")}).appendTo($(that.$.thead));
+            $.each( data.slice(1), function( key, val ) {
+              cells = [];
+              $.each(val, function(key, cell) {
+          //      console.log(key);
+                if (data[0][key] == 'Email') {
+                  cell = "<a href='mailto:" + cell + "'>"+cell+"</a>";
+                } else if (data[0][key] == 'Phone') {
+                  cell = "<a href='tel:" + cell + "'>"+cell+"</a>";
+                }
+                cells.push("<td data-th='"+data[0][key]+"'>" + cell + "</td>");
+              });
+              $("<tr/>", {html: cells.join("")}).appendTo($(that.$.tbody));
+            });
+          });
+          this.super();
+        }
+      });
+});
+    </script>
+</polymer-element>
